@@ -16,6 +16,8 @@ class BrandCategory extends Model
         'brand_id',
     ];
 
+    protected $table = 'brand_category';
+
     public function brand(): BelongsTo
     {
         return $this->belongsTo(BrandCategory::class, 'brand_id');
